@@ -4,7 +4,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "ngif",
-  async execute(message) {
+  cooldown: 5,
+  async execute(client, message, args) {
     const { body } = await superagent.get("https://nekos.life/api/v2/img/ngif");
 
     const embed = new Discord.MessageEmbed()

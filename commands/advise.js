@@ -5,7 +5,8 @@ const config = require("../data/config.json");
 module.exports = {
   name: "advise",
   aliases: ["adv"],
-  execute(message) {
+  cooldown: 5,
+  execute(client, message, args) {
     request.get("http://api.adviceslip.com/advice").end((err, res) => {
       if (!err && res.status === 200) {
         try {

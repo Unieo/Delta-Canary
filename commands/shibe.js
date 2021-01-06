@@ -4,7 +4,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "shibe",
-  async execute(message) {
+  cooldown: 5,
+  async execute(client, message, args) {
     const { body } = await superagent.get(
       `http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true`
     );

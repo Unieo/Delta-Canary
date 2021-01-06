@@ -4,7 +4,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "fight",
-  execute(message) {
+  cooldown: 5,
+  execute(client, message, args) {
     let replies = [
       "*Seriously?* Delta won :wink:",
       "Owwwie, you hurt me! :tired_face:",

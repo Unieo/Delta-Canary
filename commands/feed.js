@@ -4,7 +4,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "feed",
-  async execute(message) {
+  cooldown: 5,
+  async execute(client, message, args) {
     let replies = [
       "I don't eat you know :confounded:",
       "I accept only more RAM",

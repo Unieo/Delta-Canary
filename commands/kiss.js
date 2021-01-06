@@ -4,7 +4,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "kiss",
-  async execute(message) {
+  cooldown: 5,
+  async execute(client, message, args) {
     let replies = [
       "Ewww, no.",
       "Nope",

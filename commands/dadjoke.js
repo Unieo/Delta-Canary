@@ -5,7 +5,8 @@ const config = require("../data/config.json");
 module.exports = {
   name: "dadjoke",
   aliases: ["dj"],
-  execute(message, args) {
+  cooldown: 5,
+  execute(client, message, args) {
     args = args.join(" ");
 
     const embed = new Discord.MessageEmbed()

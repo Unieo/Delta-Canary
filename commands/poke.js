@@ -4,7 +4,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "poke",
-  async execute(message) {
+  cooldown: 5,
+  async execute(client, message, args) {
     let replies = [
       "Nope",
       "Im dirty, wash me, then do it",

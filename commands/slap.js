@@ -4,7 +4,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "slap",
-  async execute(message) {
+  cooldown: 5,
+  async execute(client, message, args) {
     let replies = [
       "You Serious!",
       "Im dirty, wash me, then do it, lol",
@@ -20,8 +21,7 @@ module.exports = {
 
     if (!user)
       return message.channel.send("You need to mention someone to slap them");
-    if (user.id == config.botid)
-      return message.channel.send("I don't have cheeks kiddo");
+    if (user.id == config.botid) return message.channel.send("i dont want to");
     if (user.id == message.author.id)
       return message.channel.send("You slapped yourself, **lol** :)");
 

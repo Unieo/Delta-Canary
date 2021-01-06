@@ -3,7 +3,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "about",
-  execute(message) {
+  cooldown: 5,
+  execute(client, message, args) {
     let about = "This bot was made for the purpose of fun and entertainment.";
     let credit =
       "A big thank you to my friend **Lookin** in helping me solve bugs etc.";

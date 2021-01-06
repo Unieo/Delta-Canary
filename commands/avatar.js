@@ -3,8 +3,9 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "avatar",
-  aliases: ["ava"],
-  execute(message) {
+  aliases: ["icon", "pfp"],
+  cooldown: 5,
+  execute(client, message, args) {
     let mentions = message.mentions.users;
     let user = mentions.first();
     let avatar = mentions.size

@@ -4,7 +4,8 @@ const config = require("../data/config.json");
 module.exports = {
   name: "8ball",
   aliases: ["8b"],
-  async execute(message, args) {
+  cooldown: 5,
+  async execute(client, message, args) {
     if (!args[0]) return message.reply("Please ask a full question");
     let replies = [
       "Maybe.",

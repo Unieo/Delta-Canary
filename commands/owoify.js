@@ -2,7 +2,8 @@ const superagent = require("superagent");
 
 module.exports = {
   name: "owoify",
-  async execute(message, args) {
+  cooldown: 5,
+  async execute(client, message, args) {
     if (!args[0])
       return message.reply("You need to input a sentence to OwOify");
     const { body } = await superagent.get(

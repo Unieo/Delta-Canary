@@ -4,7 +4,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "cat",
-  async execute(message) {
+  cooldown: 5,
+  async execute(client, message, args) {
     const { body } = await superagent.get("http://aws.random.cat/meow");
 
     const embed = new Discord.MessageEmbed()

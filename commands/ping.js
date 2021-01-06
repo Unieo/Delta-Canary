@@ -3,7 +3,8 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "ping",
-  execute(client, message) {
+  cooldown: 5,
+  execute(client, message, args) {
     let latency = Date.now() - message.createdTimestamp;
     let api = Math.round(client.ws.ping);
 

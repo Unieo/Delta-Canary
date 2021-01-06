@@ -6,7 +6,8 @@ function random() {
 module.exports = {
   name: "rockpaperscissor",
   aliases: ["rps"],
-  execute(message, args) {
+  cooldown: 5,
+  execute(client, message, args) {
     let choice = args.join(" ").toLowerCase();
     if (choice === "")
       return message.reply("Please specify either rock, paper or scissors.");
