@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const config = require("./data/config.json");
+const { prefix } = require("./data/config.json");
 
 const fs = require("fs");
 
@@ -26,7 +26,7 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
-  if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   const args = message.content.slice(prefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
