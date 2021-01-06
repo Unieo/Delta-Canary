@@ -9,8 +9,9 @@ client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
 
 const commandFiles = fs
-  .readdirSync("./commands/")
+  .readdirSync("./commands")
   .filter((file) => file.endsWith(".js"));
+
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
 
@@ -27,8 +28,16 @@ client.on("ready", () => {
 client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
-  const args = message.content.slice(config.prefix.length).split(/ +/);
-  const command = args.shift().toLowerCase();
+  const args = message.content.slice(prefix.length).trim().split(/ +/);
+  const commandName = args.shift().toLowerCase();
+
+  const command =
+    client.commands.get(commandName) ||
+    client.commands.find(
+      (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
+    );
+
+  if (!command) return;
 
   if (command === "ping") {
     client.commands.get("ping").execute(client, message);
