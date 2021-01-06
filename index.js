@@ -17,8 +17,8 @@ for (const file of commandFiles) {
 }
 
 client.on("ready", () => {
-  console.log(`Delta is Alive!`);
-  client.user.setActivity("d!help for help!", {
+  console.log(`Delta Canary is Alive!`);
+  client.user.setActivity("dc!help for help!", {
     type: "PLAYING",
   });
 });

@@ -15,14 +15,6 @@ module.exports = {
       .setDescription("**Type `dc!about` to get more info on the bot**")
       .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
-    message.author.send({ embed }).catch((e) => {
-      if (e) {
-        message.channel.send(
-          `Wait. Your DMs seem to be locked :lock: so I'll send it here instead :wink:`
-        );
-        message.channel.send({ embed });
-      }
-    });
-    message.reply("Check your DMs!");
+    message.channel.send({ embed });
   },
 };
