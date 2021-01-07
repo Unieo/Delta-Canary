@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "cuddle",
-  aliases: ["cud, hug"],
+  aliases: ["cud", "hug"],
   cooldown: 5,
   async execute(client, message, args) {
     let replies = [
