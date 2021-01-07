@@ -1,14 +1,14 @@
 {
   "fun": [
-    "`8ball` *Aliases:* `8b`, `meme`, `advice` *Aliases:* `adv`, `cat`, `dadjoke` *Aliases:* `joke`, `dog`, `kitsune` *Aliases:* `ks`, `neko`, `ngif`, `shibe`"
+    "`8ball` *Aliases:* `8b`\n `meme`\n `advice` *Aliases:* `adv`\n `cat`\n `dadjoke` *Aliases:* `joke`\n `dog`\n `kitsune` *Aliases:* `ks`\n `neko`\n `ngif`\n `shibe`"
   ],
   "utility": [
-    "`about` *Aliases:* `info`, `avatar` *Aliases:* `icon` and `pfp`, `ping`, `uptime` *Aliases:* `ut`, `serverinfo` *Aliases:* `si` and `server`"
+    "`about` *Aliases:* `info`\n `avatar` *Aliases:* `icon` and `pfp`\n `ping`\n `uptime` *Aliases:* `ut`\n `serverinfo` *Aliases:* `si` and `server`"
   ],
   "action": [
-    "`hug`, `pat`, `poke`, `cuddle` *Aliases:* `cud` and `hug`, `feed`, `hammer` *Aliases:* `ham` and `throw`, `fight`, `slap`, `smack` *Aliases:* `punch`"
+    "`hug`\n `pat`\n `poke`\n `cuddle` *Aliases:* `cud` and `hug`\n `feed`\n `hammer` *Aliases:* `ham` and `throw`\n `fight`\n `slap`\n `smack` *Aliases:* `punch`"
   ],
   "game": [
-    "`roll` *Aliases:* `dice` and `die`, `rockpaperscissor` *Aliases:* `rps`, `coinflip` *Aliases:* `cf` and `coin` and `flip`"
+    "`roll` *Aliases:* `dice` and `die`\n `rockpaperscissor` *Aliases:* `rps`\n `coinflip` *Aliases:* `cf` and `coin` and `flip`"
   ]
 }
