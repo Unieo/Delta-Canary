@@ -36,10 +36,6 @@ module.exports = {
       emojis = message.guild.emojis.cache.size;
     }
 
-    let userCount = guild.members.cache.filter((m) => !m.user.bot).size;
-
-    let botCount = message.guild.members.cache.filter((m) => m.user.bot).size;
-
     const embed = new Discord.MessageEmbed()
       .setAuthor(
         message.guild.name,
@@ -63,9 +59,17 @@ module.exports = {
         true
       )
       .addField("Region", region[message.guild.region], true)
-      .addField("User Count", userCount, true)
-      .addField("Member Count", message.guild.approximateMemberCount, true)
-      .addField("Bot Count", botCount, true)
+      .addField(
+        "User Count",
+        message.guild.members.cache.filter((m) => !m.user.bot).size,
+        true
+      )
+      .addField("Member Count", message.guild.memberCount, true)
+      .addField(
+        "Bot Count",
+        message.guild.members.cache.filter((m) => m.user.bot).size,
+        true
+      )
       .addField("AFK Timeout", message.guild.afkTimeout / 60 + " minutes", true)
       .addField("Roles", message.guild.roles.cache.size, true)
       .addField("Channels", message.guild.channels.cache.size, true)
