@@ -4,7 +4,7 @@ const { fun, utility, action, game } = require("../data/help.json");
 
 module.exports = {
   name: "help",
-  cooldown: 15,
+  cooldown: 20,
   execute(client, message, args) {
     const embed = new Discord.MessageEmbed()
       .setTitle("Help is here!")
