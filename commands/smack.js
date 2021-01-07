@@ -15,12 +15,12 @@ module.exports = {
       "I do not tolerate violence, but I do sometimes :sweat_smile:.",
       "I killed U, ur face be like :zany_face:",
     ];
+    let result = Math.floor(Math.random() * replies.length);
     let user = message.mentions.users.first();
 
     if (!user)
       return message.channel.send("You need to mention someone to smack them");
-    if (user.id == config.botid)
-      return message.channel.send("Ima robot, dude.");
+    if (user.id == config.botid) return message.channel.send(replies[result]);
     if (user.id == message.author.id)
       return message.channel.send("You smacked yourself, **lol** :)");
 

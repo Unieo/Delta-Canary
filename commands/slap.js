@@ -17,11 +17,12 @@ module.exports = {
       "U think Ima Toy? Well Ima kick ur ass!",
       "I don't have cheeks kiddo",
     ];
+    let result = Math.floor(Math.random() * replies.length);
     let user = message.mentions.users.first();
 
     if (!user)
       return message.channel.send("You need to mention someone to slap them");
-    if (user.id == config.botid) return message.channel.send("i dont want to");
+    if (user.id == config.botid) return message.channel.send(replies[result]);
     if (user.id == message.author.id)
       return message.channel.send("You slapped yourself, **lol** :)");
 
