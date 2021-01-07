@@ -19,7 +19,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
           .setTitle("Your Advise, Pal")
           .setColor(Math.floor(Math.random() * 16777215))
-          .addField(advice.slip.advice)
+          .setDescription(`**${advice.slip.advice}**`)
           .setTimestamp()
           .setFooter(`${config.copyright}`);
         message.channel.send({ embed });
