@@ -3,6 +3,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "about",
+  aliases: ["info"],
   cooldown: 5,
   execute(client, message, args) {
     let about = "This bot was made for the purpose of fun and entertainment.";
@@ -13,7 +14,7 @@ module.exports = {
       "Click [here](https://github.com/Unieo/Delta-Canary) to go to GitHub";
     let version = "1.1.3 Canary Release";
     let notes =
-      "**Delta:** We recommend the official Delta bot for larger communities... [click here](https://discord.com/oauth2/authorize?client_id=786882695186874368&scope=bot&permissions=2147483647) to invite the bot!\n**Delta Beta:** Like Stable Builds but Awesome Features? Or do you just want to test out new feature before anyone else? [click here](https://discord.com/oauth2/authorize?client_id=796231105665040414&scope=bot&permissions=2147483647) to invite the bot!";
+      "**Delta:** We recommend the official Delta bot for larger communities... [click here](https://discord.com/oauth2/authorize?client_id=786882695186874368&scope=bot&permissions=2147483647) to invite the bot!\n**Delta Beta:** Like Stable Builds but Awesome Features? Or do you just want to test out new feature's before anyone else? [click here](https://discord.com/oauth2/authorize?client_id=796231105665040414&scope=bot&permissions=2147483647) to invite the bot!";
     const embed = new Discord.MessageEmbed()
       .setTitle("Bot Info")
       .setColor(Math.floor(Math.random() * 16777215))

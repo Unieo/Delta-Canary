@@ -3,7 +3,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "coinflip",
-  aliases: ["cf"],
+  aliases: ["cf, coin, flip"],
   cooldown: 5,
   execute(client, message, args) {
     let random = Math.floor(Math.random() * Math.floor(2));

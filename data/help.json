@@ -1,14 +1,14 @@
 {
   "fun": [
-    "`8ball`, `meme`, `advice`, `cat`, `dadjoke`, `dog`, `kitsune`, `neko`, `ngif`, `shibe`, `owoify`, `copypasta`"
+    "`8ball` or `8b`, `meme`, `advice` or `adv`, `cat`, `dadjoke` or `joke`, `dog`, `kitsune` or `ks`, `neko`, `ngif`, `shibe`, `copypasta` or `cp` or `copy`"
   ],
   "utility": [
-    "`about`, `avatar`, `ping`, `uptime`, `serverinfo`"
+    "`about` or `info`, `avatar` or `icon` or `pfp`, `ping`, `uptime` or `ut`, `serverinfo` or `si` or `server`"
   ],
   "action": [
-    "`hug`, `pat`, `kiss`, `poke`, `cuddle`, `feed`, `hammer`, `fight`, `slap`, `smack`"
+    "`hug`, `pat`, `poke`, `cuddle` or `cud` or `hug`, `feed`, `hammer` or `ham` or `throw`, `fight`, `slap`, `smack` or `punch`"
   ],
   "game": [
-    "`roll`, `rps`, `coinflip`"
+    "`roll` or `dice` or `die`, `rockpaperscissor` or `rps`, `coinflip` or `cp` or `coin` or `flip`"
   ]
 }
