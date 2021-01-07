@@ -3,12 +3,12 @@
     "`8ball` *Aliases:* `8b`\n `meme`\n `advice` *Aliases:* `adv`\n `cat`\n `dadjoke` *Aliases:* `joke`\n `dog`\n `kitsune` *Aliases:* `ks`\n `neko`\n `ngif`\n `shibe`"
   ],
   "utility": [
-    "`about` *Aliases:* `info`\n `avatar` *Aliases:* `icon` and `pfp`\n `ping`\n `uptime` *Aliases:* `ut`\n `serverinfo` *Aliases:* `si` and `server`"
+    "`about` *Aliases:* `info`\n `avatar` *Aliases:* `icon`, `pfp`\n `ping`\n `uptime` *Aliases:* `ut`\n `serverinfo` *Aliases:* `si`, `server`"
   ],
   "action": [
-    "`hug`\n `pat`\n `poke`\n `cuddle` *Aliases:* `cud` and `hug`\n `feed`\n `hammer` *Aliases:* `ham` and `throw`\n `fight`\n `slap`\n `smack` *Aliases:* `punch`"
+    "`hug`\n `pat`\n `poke`\n `cuddle` *Aliases:* `cud`, `hug`\n `feed`\n `hammer` *Aliases:* `ham`, `throw`\n `fight`\n `slap`\n `smack` *Aliases:* `punch`"
   ],
   "game": [
-    "`roll` *Aliases:* `dice` and `die`\n `rockpaperscissor` *Aliases:* `rps`\n `coinflip` *Aliases:* `cf` and `coin` and `flip`"
+    "`roll` *Aliases:* `dice`, `die`\n `rockpaperscissor` *Aliases:* `rps`\n `coinflip` *Aliases:* `cf`, `coin`, `flip`"
   ]
 }
