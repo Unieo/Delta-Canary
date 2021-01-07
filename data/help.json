@@ -1,14 +1,14 @@
 {
   "fun": [
-    "`8ball` or `8b`, `meme`, `advice` or `adv`, `cat`, `dadjoke` or `joke`, `dog`, `kitsune` or `ks`, `neko`, `ngif`, `shibe`"
+    "`8ball` *Aliases:* `8b`, `meme`, `advice` *Aliases:* `adv`, `cat`, `dadjoke` *Aliases:* `joke`, `dog`, `kitsune` *Aliases:* `ks`, `neko`, `ngif`, `shibe`"
   ],
   "utility": [
-    "`about` or `info`, `avatar` or `icon` or `pfp`, `ping`, `uptime` or `ut`, `serverinfo` or `si` or `server`"
+    "`about` *Aliases:* `info`, `avatar` *Aliases:* `icon` and `pfp`, `ping`, `uptime` *Aliases:* `ut`, `serverinfo` *Aliases:* `si` and `server`"
   ],
   "action": [
-    "`hug`, `pat`, `poke`, `cuddle` or `cud` or `hug`, `feed`, `hammer` or `ham` or `throw`, `fight`, `slap`, `smack` or `punch`"
+    "`hug`, `pat`, `poke`, `cuddle` *Aliases:* `cud` and `hug`, `feed`, `hammer` *Aliases:* `ham` and `throw`, `fight`, `slap`, `smack` *Aliases:* `punch`"
   ],
   "game": [
-    "`roll` or `dice` or `die`, `rockpaperscissor` or `rps`, `coinflip` or `cf` or `coin` or `flip`"
+    "`roll` *Aliases:* `dice` and `die`, `rockpaperscissor` *Aliases:* `rps`, `coinflip` *Aliases:* `cf` and `coin` and `flip`"
   ]
 }
