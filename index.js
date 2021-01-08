@@ -39,6 +39,10 @@ client.on("message", (message) => {
 
   if (!command) return;
 
+  if (command.guildOnly && message.channel.type === "dm") {
+    return message.reply("I can't execute that command inside DMs!");
+  }
+
   if (!cooldowns.has(command.name)) {
     cooldowns.set(command.name, new Discord.Collection());
   }
@@ -67,7 +71,7 @@ client.on("message", (message) => {
     command.execute(client, message, args);
   } catch (error) {
     console.error(error);
-    message.reply("there was an error trying to execute that command!");
+    message.reply("There was an error trying to execute that command!");
   }
 });
 
