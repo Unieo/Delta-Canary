@@ -3,7 +3,7 @@ const randomPuppy = require("random-puppy");
 const config = require("../data/config.json");
 
 module.exports = {
-  name: "meme",
+  name: "anime",
   cooldown: 10,
   execute(client, message, args) {
     let reddit = ["anime", "AnimeART", "Anime_Art", "AnimeSketch"];
