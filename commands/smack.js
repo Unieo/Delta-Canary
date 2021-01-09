@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 module.exports = {
   name: "smack",
   aliases: ["punch"],
-  cooldown: 5,
+  cooldown: 20,
   execute(client, message, args) {
     let replies = [
       "Ima robot, leave me alone :persevere:",

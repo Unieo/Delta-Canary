@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "poke",
-  cooldown: 5,
+  cooldown: 20,
   async execute(client, message, args) {
     let replies = [
       "Nope",

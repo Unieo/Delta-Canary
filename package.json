@@ -1,6 +1,6 @@
 {
   "name": "project-delta",
-  "version": "1.0.0",
+  "version": "1.0.14 Canary Release",
   "description": "A simple fun bot",
   "main": "index.js",
   "scripts": {
@@ -9,10 +9,8 @@
   "author": "Unieo",
   "license": "MIT",
   "dependencies": {
-    "alexflipnote.js": "^2.3.3",
     "discord.js": "^12.5.1",
     "random-puppy": "^1.1.0",
-    "snekfetch": "^4.0.4",
     "superagent": "^6.1.0"
   }
 }

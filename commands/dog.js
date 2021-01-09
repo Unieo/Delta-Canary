@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "dog",
-  cooldown: 5,
+  cooldown: 10,
   async execute(client, message, args) {
     const { body } = await superagent.get(
       "https://dog.ceo/api/breeds/image/random"

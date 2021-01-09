@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 module.exports = {
   name: "roll",
   aliases: ["dice", "die"],
-  cooldown: 5,
+  cooldown: 8,
   execute(client, message, args) {
     let answer = Math.floor(Math.random() * 6) + 1;
 

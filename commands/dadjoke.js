@@ -5,7 +5,7 @@ const config = require("../data/config.json");
 module.exports = {
   name: "dadjoke",
   aliases: ["joke"],
-  cooldown: 5,
+  cooldown: 10,
   execute(client, message, args) {
     args = args.join(" ");
 
