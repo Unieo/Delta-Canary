@@ -6,11 +6,7 @@ module.exports = {
   name: "anime",
   cooldown: 10,
   execute(client, message, args) {
-    let reddit = ["anime", "AnimeART", "Anime_Art", "AnimeSketch"];
-
-    let subreddit = reddit[Math.floor(Math.random() * reddit.length)];
-
-    randomPuppy(subreddit).then((url) => {
+    randomPuppy("AnimeART").then((url) => {
       const embed = new Discord.MessageEmbed()
         .setTitle("Here's Your Anime")
         .setImage(url)
