@@ -3,7 +3,7 @@
     "`8ball` *Aliases:* `8b`\n`meme`\n`advice` *Aliases:* `adv`\n`cat`\n`dadjoke` *Aliases:* `joke`\n`dog`\n`shibe`\n`anime`"
   ],
   "utility": [
-    "`about` *Aliases:* `info`\n `avatar` *Aliases:* `icon`, `pfp`\n `ping`\n `uptime` *Aliases:* `ut`\n`serverinfo` *Aliases:* `si`, `server`"
+    "`about` *Aliases:* `info`\n `avatar` *Aliases:* `icon`, `pfp`\n `ping`\n `uptime` *Aliases:* `ut`\n`serverinfo` *Aliases:* `si`, `server`\n`version` *Aliases:* `v`, `build`\n`source` *Aliases* `src`"
   ],
   "action": [
     "`pat`\n`poke`\n`cuddle` *Aliases:* `cud`, `hug`\n`feed`\n`hammer` *Aliases:* `ham`, `throw`\n`fight`\n`slap`\n`smack` *Aliases:* `punch`"
