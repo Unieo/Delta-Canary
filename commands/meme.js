@@ -19,7 +19,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
       .setColor(Math.floor(Math.random() * 16777215))
       .setTitle("Here's Your Meme")
-      .setDescription(data.caption)
+      .setDescription(`${data.caption}`)
       .setImage(data.image)
       .setTimestamp()
       .setFooter(`${config.copyright}`);
