@@ -1,20 +1,25 @@
-const dadjoke = require("../data/dadjoke.json");
 const Discord = require("discord.js");
+const axios = require("axios");
 const config = require("../data/config.json");
 
 module.exports = {
-  name: "dadjoke",
-  aliases: ["joke"],
+  name: "joke",
   cooldown: 10,
   execute(client, message, args) {
-    args = args.join(" ");
+    const url = "https://some-random-api.ml/joke";
+
+    let response, data;
+    try {
+      response = await axios.get(url);
+      data = response.data;
+    } catch (e) {
+      return message.channel.send(`An error occured!`);
+    }
 
     const embed = new Discord.MessageEmbed()
-      .setTitle("Here's your Dad Joke")
+      .setTitle("Here's your Joke")
       .setColor(Math.floor(Math.random() * 16777215))
-      .setDescription(
-        `**${dadjoke[Math.floor(Math.random() * dadjoke.length)]}**`
-      )
+      .setDescription(`${data.joke}`)
       .setTimestamp()
       .setFooter(`${config.copyright}`);
     message.channel.send({ embed });
