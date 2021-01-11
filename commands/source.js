@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const config = require("../data/config.json");
 
 module.exports = {
-  name: "version",
+  name: "source",
   aliases: ["src"],
   cooldown: 5,
   execute(client, message, args) {
