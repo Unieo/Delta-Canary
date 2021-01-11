@@ -6,15 +6,7 @@ module.exports = {
   name: "joke",
   cooldown: 10,
   async execute(client, message, args) {
-    const url = "https://some-random-api.ml/joke";
-
-    let response, data;
-    try {
-      response = await axios.get(url);
-      data = response.data;
-    } catch (e) {
-      return message.channel.send(`An error occured!`);
-    }
+    const { data } = await axios.get("https://some-random-api.ml/joke");
 
     const embed = new Discord.MessageEmbed()
       .setTitle("Here's your Joke")

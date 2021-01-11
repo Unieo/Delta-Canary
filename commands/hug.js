@@ -3,8 +3,7 @@ const superagent = require("superagent");
 const config = require("../data/config.json");
 
 module.exports = {
-  name: "cuddle",
-  aliases: ["cud", "hug"],
+  name: "hug",
   cooldown: 20,
   async execute(client, message, args) {
     let replies = [
