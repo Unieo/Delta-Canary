@@ -6,7 +6,15 @@ module.exports = {
   name: "meme",
   cooldown: 10,
   async execute(client, message, args) {
-    const { data } = await superagent.get("https://some-random-api.ml/meme");
+    const url = "https://some-random-api.ml/meme";
+
+    let response, data;
+    try {
+      response = await axios.get(url);
+      data = response.data;
+    } catch (e) {
+      return message.channel.send(`An error occured!`);
+    }
 
     const embed = new Discord.MessageEmbed()
       .setColor(Math.floor(Math.random() * 16777215))
