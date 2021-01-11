@@ -6,7 +6,17 @@ module.exports = {
   name: "bird",
   cooldown: 10,
   execute(client, message, args) {
-    randomPuppy("birdpics").then((url) => {
+    let reddit = [
+      "birds",
+      "birdpics",
+      "birding",
+      "birdstakingthetrain",
+      "birdsofprey",
+    ];
+
+    let subreddit = reddit[Math.floor(Math.random() * reddit.length)];
+
+    randomPuppy(subreddit).then((url) => {
       const embed = new Discord.MessageEmbed()
         .setTitle("Here's Your Bird")
         .setImage(url)

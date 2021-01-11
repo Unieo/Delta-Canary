@@ -21,6 +21,7 @@ module.exports = {
       "me_irl",
       "2meirl4meirl",
       "AdviceAnimals",
+      "BirdsArentReal",
     ];
 
     let subreddit = reddit[Math.floor(Math.random() * reddit.length)];
