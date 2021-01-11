@@ -16,18 +16,18 @@ module.exports = {
   execute(client, message, args) {
     let region = {
       brazil: "Brazil",
-      eucentral: "Central Europe",
+      "eu-central": "Central Europe",
       singapore: "Singapore",
-      uscentral: "U.S. Central",
+      "us-central": "U.S. Central",
       sydney: "Sydney",
-      useast: "U.S. East",
-      ussouth: "U.S. South",
-      uswest: "U.S. West",
-      euwest: "Western Europe",
-      vipuseast: "VIP U.S. East",
+      "us-east": "U.S. East",
+      "us-south": "U.S. South",
+      "us-west": "U.S. West",
+      "eu-west": "Western Europe",
+      "vip-us-east": "VIP U.S. East",
       london: "London",
       amsterdam: "Amsterdam",
-      hongkong: "Hong Kong",
+      "hong-kong": "Hong Kong",
     };
 
     var emojis;
