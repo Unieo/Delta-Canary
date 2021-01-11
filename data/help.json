@@ -1,6 +1,6 @@
 {
   "fun": [
-    "`8ball` *Aliases:* `8b`\n`meme`\n`advice` *Aliases:* `adv`\n`cat`\n`dadjoke` *Aliases:* `joke`\n`dog`\n`shibe`\n`anime`\n`bird`"
+    "`8ball` *Aliases:* `8b`\n`meme`\n`advice` *Aliases:* `adv`\n`cat`\n`dadjoke` *Aliases:* `joke`\n`dog`\n`shibe`\n`birb`\nfox"
   ],
   "utility": [
     "`about` *Aliases:* `info`\n`avatar` *Aliases:* `icon`, `pfp`\n`ping`\n`uptime` *Aliases:* `ut`\n`serverinfo` *Aliases:* `si`, `server`\n`version` *Aliases:* `v`, `build`\n`source` *Aliases* `src`"
