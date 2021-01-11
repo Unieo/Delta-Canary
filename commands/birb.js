@@ -6,7 +6,7 @@ module.exports = {
   name: "birb",
   cooldown: 10,
   async execute(client, message, args) {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://some-random-api.ml/img/birb"
     );
 
@@ -16,6 +16,6 @@ module.exports = {
       .setImage(data.link)
       .setTimestamp()
       .setFooter(`${config.copyright}`);
-    message.channel.send({ embed });
+    return message.channel.send({ embed });
   },
 };

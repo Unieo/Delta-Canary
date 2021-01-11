@@ -6,7 +6,7 @@ module.exports = {
   name: "meme",
   cooldown: 10,
   async execute(client, message, args) {
-    const { body } = await superagent.get("https://some-random-api.ml/meme");
+    const { data } = await superagent.get("https://some-random-api.ml/meme");
 
     const embed = new Discord.MessageEmbed()
       .setColor(Math.floor(Math.random() * 16777215))
@@ -15,6 +15,6 @@ module.exports = {
       .setImage(data.image)
       .setTimestamp()
       .setFooter(`${config.copyright}`);
-    message.channel.send({ embed });
+    return message.channel.send({ embed });
   },
 };
