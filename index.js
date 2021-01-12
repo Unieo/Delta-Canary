@@ -20,7 +20,7 @@ for (const file of commandFiles) {
 
 client.on("ready", () => {
   console.log(`Delta Canary is Alive!`);
-  client.user.setActivity("dc!help for help!", {
+  client.user.setActivity("//help for help!", {
     type: "PLAYING",
   });
 });

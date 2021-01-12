@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 const config = require("../data/config.json");
 
 module.exports = {
-  name: "roll",
-  aliases: ["dice", "die"],
+  name: "diceroll",
+  aliases: ["dr"],
   cooldown: 8,
   execute(client, message, args) {
     let answer = Math.floor(Math.random() * 6) + 1;

@@ -13,7 +13,6 @@ module.exports = {
       .addField("Utility:", utility)
       .addField("Actions:", action)
       .addField("Games:", game)
-      .setDescription("**Type `dc!info` to get more info on the bot**")
       .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
     message.channel.send({ embed });

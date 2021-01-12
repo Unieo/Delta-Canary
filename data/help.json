@@ -3,12 +3,12 @@
     "`8ball` *Aliases:* `8b`\n`meme`\n`advice` *Aliases:* `adv`\n`cat`\n`joke`\n`dog`\n`shibe`\n`birb`\n`fox`"
   ],
   "utility": [
-    "`info`\n`avatar` *Aliases:* `icon`, `pfp`\n`ping`\n`uptime` *Aliases:* `ut`\n`serverinfo` *Aliases:* `si`, `server`\n`version` *Aliases:* `v`, `build`\n`source` *Aliases* `src`"
+    "`info`\n`avatar` *Aliases:* `icon`, `pfp`\n`ping`\n`uptime` *Aliases:* `ut`\n`serverinfo` *Aliases:* `si`, `server`\n`source` *Aliases* `src`"
   ],
   "action": [
     "`pat`\n`poke`\n`hug`\n`feed`\n`hammer` *Aliases:* `ham`, `throw`\n`fight`\n`slap`\n`smack` *Aliases:* `punch`"
   ],
   "game": [
-    "`roll` *Aliases:* `dice`, `die`\n`rockpaperscissor` *Aliases:* `rps`\n`coinflip` *Aliases:* `cf`, `coin`, `flip`"
+    "`diceroll` *Aliases:* `dr`\n`rockpaperscissor` *Aliases:* `rps`\n`coinflip` *Aliases:* `cf`"
   ]
 }

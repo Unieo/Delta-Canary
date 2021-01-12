@@ -9,14 +9,12 @@ module.exports = {
     let credit =
       "A big thank you to my friend **Lookin** in helping me solve bugs etc.";
     let licence = "MIT";
-    let sourceCode = `Click [here](${config.source}) to go to GitHub`;
     const embed = new Discord.MessageEmbed()
       .setTitle("Bot Info")
       .setColor(Math.floor(Math.random() * 16777215))
       .addField("About:", about)
       .addField("Credit:", credit)
       .addField("Licence:", licence)
-      .addField("Source Code:", sourceCode)
       .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
 
