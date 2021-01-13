@@ -7,17 +7,18 @@ module.exports = {
   execute(client, message, args) {
     let about = "This bot was made for the purpose of fun and entertainment.";
     let credit =
-      "A big thank you to my friend **Lookin** in helping me solve bugs etc.";
+      "Here is a list of people who really helped me out with the development of this bot: \n Lookinsomething \n winking \n Darkinator \n ";
     let licence = "MIT";
+    let support = "[Delta Vault](https://discord.gg/BfwHnRf6bU)";
     const embed = new Discord.MessageEmbed()
       .setTitle("Bot Info")
       .setColor(Math.floor(Math.random() * 16777215))
       .addField("About:", about)
       .addField("Credit:", credit)
+      .addField("Support:", support)
       .addField("Licence:", licence)
       .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
-
     message.channel.send({ embed });
   },
 };
