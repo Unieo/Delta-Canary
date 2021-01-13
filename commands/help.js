@@ -27,27 +27,27 @@ module.exports = {
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
 
     const utility = new Discord.MessageEmbed()
-      .setTitle(":partying_face: Fun Commands!")
+      .setTitle(":radio_button: Utility Commands!")
       .setColor(Math.floor(Math.random() * 16777215))
       .addField("Fun:", help.utility)
       .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
 
     const action = new Discord.MessageEmbed()
-      .setTitle(":partying_face: Fun Commands!")
+      .setTitle(":man_gesturing_no: Action Commands!")
       .setColor(Math.floor(Math.random() * 16777215))
       .addField("Fun:", help.action)
       .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
 
     const game = new Discord.MessageEmbed()
-      .setTitle(":partying_face: Fun Commands!")
+      .setTitle(":game_die: Game Commands!")
       .setColor(Math.floor(Math.random() * 16777215))
       .addField("Fun:", help.game)
       .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
 
-    const pages = [fun, utility, action, game];
+    const pages = [intro, fun, utility, action, game];
 
     const emojiList = ["⏪", "⏩"];
 
