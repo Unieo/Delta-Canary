@@ -3,7 +3,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "invite",
-  alisases: ["inv"],
+  aliases: ["inv"],
   cooldown: 5,
   execute(client, message, args) {
     let invite =

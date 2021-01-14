@@ -20,9 +20,6 @@ module.exports = {
       .setTitle(":partying_face: Fun Commands!")
       .setColor(Math.floor(Math.random() * 16777215))
       .addField("Fun:", help.fun)
-      .setDescription(
-        "Join our bot's [Support Server](https://discord.gg/BfwHnRf6bU) for bot updates, bug fixes and downtime reminders!"
-      )
       .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
 
