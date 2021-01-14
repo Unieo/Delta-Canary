@@ -1,8 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-
 const { prefix } = require("./data/config.json");
-
+const keepAlive = require("./server.js");
 const fs = require("fs");
 
 client.commands = new Discord.Collection();
@@ -19,7 +18,7 @@ for (const file of commandFiles) {
 }
 
 client.on("ready", () => {
-  console.log(`Delta Canary is Alive!`);
+  console.log(`Bot is online!`);
   client.user.setActivity(`${prefix}help for help!`, {
     type: "PLAYING",
   });
@@ -38,10 +37,6 @@ client.on("message", (message) => {
     );
 
   if (!command) return;
-
-  if (command.guildOnly && message.channel.type === "dm") {
-    return message.reply("I can't execute that command inside DMs!");
-  }
 
   if (!cooldowns.has(command.name)) {
     cooldowns.set(command.name, new Discord.Collection());
@@ -71,8 +66,9 @@ client.on("message", (message) => {
     command.execute(client, message, args);
   } catch (error) {
     console.error(error);
-    message.reply("There was an error trying to execute that command!");
+    message.reply("there was an error trying to execute that command!");
   }
 });
 
-client.login(process.env.token);
+keepAlive();
+client.login(process.env.DISCORD_BOT_TOKEN);
