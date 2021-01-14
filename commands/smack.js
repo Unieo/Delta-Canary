@@ -26,7 +26,10 @@ module.exports = {
 
     const embed = new Discord.MessageEmbed()
       .setColor(Math.floor(Math.random() * 16777215))
-      .setTitle(`${message.author.username} smacked ${user.username} lol`)
+      .setTitle("Smack Time!")
+      .setDescription(
+        `**${message.author.username} smacked ${user.username} lol**`
+      )
       .setTimestamp()
       .setFooter(`${config.copyright}`);
     message.channel.send({ embed });
