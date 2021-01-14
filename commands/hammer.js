@@ -3,7 +3,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "hammer",
-  aliases: ["ham", "throw"],
+  aliases: ["hmr"],
   cooldown: 20,
   execute(client, message, args) {
     let replies = [

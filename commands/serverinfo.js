@@ -10,7 +10,7 @@ function checkDays(date) {
 
 module.exports = {
   name: "serverinfo",
-  aliases: ["si", "server"],
+  aliases: ["si"],
   guildOnly: true,
   cooldown: 5,
   execute(client, message, args) {
