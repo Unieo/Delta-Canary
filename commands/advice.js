@@ -3,7 +3,7 @@ const request = require("superagent");
 const config = require("../data/config.json");
 
 module.exports = {
-  name: "advise",
+  name: "advice",
   aliases: ["adv"],
   cooldown: 10,
   execute(client, message, args) {
@@ -17,7 +17,7 @@ module.exports = {
         const advice = JSON.parse(res.text);
 
         const embed = new Discord.MessageEmbed()
-          .setTitle("Your Advise, Pal")
+          .setTitle("Your Advice, Pal")
           .setColor(Math.floor(Math.random() * 16777215))
           .setDescription(`**${advice.slip.advice}**`)
           .setTimestamp()
