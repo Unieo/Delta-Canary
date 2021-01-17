@@ -3,6 +3,8 @@ const client = new Discord.Client();
 const { prefix, ownername } = require("./data/config.json");
 const keepAlive = require("./server.js");
 const fs = require("fs");
+const eris = require('eris');
+const bot = new eris.Client(process.env.DISCORD_BOT_TOKEN);
 
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
@@ -42,6 +44,20 @@ client.on("guildCreate", (guild) => {
     .setTimestamp()
     .setFooter(`Made with ❤️ by ${ownername}`);
   defaultChannel.send({ embed });
+});
+
+bot.on('messageCreate', (msg) => {
+  const botWasMentioned = msg.mentions.find(
+     mentionedUser => mentionedUser.id === bot.user.id,
+  );
+
+  if (botWasMentioned) {
+    try {
+      msg.channel.send(`The Bots Prefix is ${prefix}`);
+    } catch (err) {
+			console.log(err);
+		}
+	}
 });
 
 client.on("message", (message) => {
