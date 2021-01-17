@@ -4,12 +4,12 @@ const superagent = require('superagent');
 const config = require("../data/config.json");
 
 module.exports = {
-  name: "birb",
+  name: "koala",
   cooldown: 10,
   async execute(client, message, args) {
-		const { body } = await superagent.get("https://some-random-api.ml/facts/bird");
+		const { body } = await superagent.get("https://some-random-api.ml/facts/koala");
 
-    const url = "https://some-random-api.ml/img/birb";
+    const url = "https://some-random-api.ml/img/koala";
 
     let response, data;
     try {
@@ -21,7 +21,7 @@ module.exports = {
 
     const embed = new Discord.MessageEmbed()
       .setColor(Math.floor(Math.random() * 16777215))
-      .setTitle("Here's Your Birb :bird:")
+      .setTitle("Here's Your Koala :koala:")
       .setImage(data.link)
 			.setDescription(body.fact)
       .setTimestamp()

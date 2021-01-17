@@ -1,38 +1,25 @@
 const Discord = require("discord.js");
-const randomPuppy = require("random-puppy");
-const config = require("../data/config.json");
+const got = require("got");
 
 module.exports = {
   name: "meme",
-  cooldown: 5,
-  execute(client, message, args) {
-    let reddit = [
-      "meme",
-      "animemes",
-      "MemesOfAnime",
-      "animememes",
-      "AnimeFunny",
-      "dankmemes",
-      "dankmeme",
-      "wholesomememes",
-      "MemeEconomy",
-      "techsupportanimals",
-      "meirl",
-      "me_irl",
-      "2meirl4meirl",
-      "AdviceAnimals",
-    ];
-
-    let subreddit = reddit[Math.floor(Math.random() * reddit.length)];
-
-    randomPuppy(subreddit).then((url) => {
-      const embed = new Discord.MessageEmbed()
-        .setTitle("Here's Your Meme")
-        .setImage(url)
-        .setColor(Math.floor(Math.random() * 16777215))
-        .setFooter(`${config.copyright}`)
-        .setTimestamp();
-      return message.channel.send({ embed });
-    });
+  cooldown: 10,
+  async execute(client, message, args) {
+		const embed = new Discord.MessageEmbed
+        got('https://www.reddit.com/r/memes/random/.json').then(response => {
+            let content = JSON.parse(response.body);
+            let permalink = content[0].data.children[0].data.permalink;
+            let memeUrl = `https://reddit.com${permalink}`;
+            let memeImage = content[0].data.children[0].data.url;
+            let memeTitle = content[0].data.children[0].data.title;
+            let memeUpvotes = content[0].data.children[0].data.ups;
+            let memeNumComments = content[0].data.children[0].data.num_comments;
+            embed.setTitle(`${memeTitle}`)
+            embed.setURL(`${memeUrl}`)
+            embed.setImage(memeImage)
+            embed.setColor('RAMDOM')
+            embed.setFooter(`👍 ${memeUpvotes} • 💬 ${memeNumComments}`)
+            message.channel.send(embed);
+        })
   },
 };
