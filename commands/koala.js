@@ -1,13 +1,15 @@
 const Discord = require("discord.js");
 const axios = require("axios");
-const superagent = require('superagent');
+const superagent = require("superagent");
 const config = require("../data/config.json");
 
 module.exports = {
   name: "koala",
   cooldown: 10,
   async execute(client, message, args) {
-		const { body } = await superagent.get("https://some-random-api.ml/facts/koala");
+    const { body } = await superagent.get(
+      "https://some-random-api.ml/facts/koala"
+    );
 
     const url = "https://some-random-api.ml/img/koala";
 
@@ -23,7 +25,7 @@ module.exports = {
       .setColor(Math.floor(Math.random() * 16777215))
       .setTitle("Here's Your Koala :koala:")
       .setImage(data.link)
-			.setDescription(body.fact)
+      .setDescription(body.fact)
       .setTimestamp()
       .setFooter(`${config.copyright}`);
     return message.channel.send({ embed });

@@ -9,9 +9,9 @@ module.exports = {
   async execute(client, message, args) {
     const { body } = await superagent.get("http://aws.random.cat/meow");
 
-		const url = "https://some-random-api.ml/facts/cat";
-		
-		let response, data;
+    const url = "https://some-random-api.ml/facts/cat";
+
+    let response, data;
     try {
       response = await axios.get(url);
       data = response.data;
@@ -23,7 +23,7 @@ module.exports = {
       .setColor(Math.floor(Math.random() * 16777215))
       .setTitle("Here's Your Cat :cat:")
       .setImage(body.file)
-			.setDescription(data.fact)
+      .setDescription(data.fact)
       .setTimestamp()
       .setFooter(`${config.copyright}`);
     message.channel.send({ embed });

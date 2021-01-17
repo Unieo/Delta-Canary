@@ -7,9 +7,11 @@ module.exports = {
   name: "fox",
   cooldown: 10,
   async execute(client, message, args) {
-		const { body } = await superagent.get("https://some-random-api.ml/facts/fox");
+    const { body } = await superagent.get(
+      "https://some-random-api.ml/facts/fox"
+    );
 
-		const url = "https://randomfox.ca/floof/";
+    const url = "https://randomfox.ca/floof/";
 
     let response, data;
     try {
@@ -23,7 +25,7 @@ module.exports = {
       .setColor(Math.floor(Math.random() * 16777215))
       .setTitle("Here's Your Fox :fox:")
       .setImage(data.image)
-			.setDescription(body.fact)
+      .setDescription(body.fact)
       .setTimestamp()
       .setFooter(`${config.copyright}`);
     return message.channel.send({ embed });

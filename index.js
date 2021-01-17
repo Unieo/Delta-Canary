@@ -24,22 +24,24 @@ client.on("ready", () => {
   });
 });
 
-client.on("guildCreate", guild => {
-	let defaultChannel = "";
-	guild.channels.cache.forEach((channel) => {
-	  if(channel.type == "text" && defaultChannel == "") {
-	    if(channel.permissionsFor(guild.me).has("SEND_MESSAGES")) {
-	      defaultChannel = channel;
-	    }
-	  }
-	})
-	const embed = new Discord.MessageEmbed()
+client.on("guildCreate", (guild) => {
+  let defaultChannel = "";
+  guild.channels.cache.forEach((channel) => {
+    if (channel.type == "text" && defaultChannel == "") {
+      if (channel.permissionsFor(guild.me).has("SEND_MESSAGES")) {
+        defaultChannel = channel;
+      }
+    }
+  });
+  const embed = new Discord.MessageEmbed()
     .setColor(Math.floor(Math.random() * 16777215))
     .setTitle("Thanks For inviting Delta Canary!")
-		.setDescription(`I hope you enjoy using my commands! Why don't you try \`${prefix}help\` and take a look at my *cool commands*, :smirk:\n\n**Important Links:**\n[Support Server](http://discord.gg/BfwHnRf6bU) - Report Bugs, Request Features, Get Informed of downtime etc.!\n[Invite](https://discord.com/oauth2/authorize?client_id=796232722372231219&scope=bot&permissions=2147483647) - Bot invite link! Invite the bot to your servers...`)
+    .setDescription(
+      `I hope you enjoy using my commands! Why don't you try \`${prefix}help\` and take a look at my *cool commands*, :smirk:\n\n**Important Links:**\n[Support Server](http://discord.gg/BfwHnRf6bU) - Report Bugs, Request Features, Get Informed of downtime etc.!\n[Invite](https://discord.com/oauth2/authorize?client_id=796232722372231219&scope=bot&permissions=2147483647) - Bot invite link! Invite the bot to your servers...`
+    )
     .setTimestamp()
     .setFooter(`Made with ❤️ by ${ownername}`);
-	defaultChannel.send({ embed });
+  defaultChannel.send({ embed });
 });
 
 client.on("message", (message) => {

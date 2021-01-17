@@ -37,11 +37,11 @@ module.exports = {
       .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
 
-		const animal = new Discord.MessageEmbed()
-			.setTitle(":mammoth: Animal Commands!")
-			.setColor(Math.floor(Math.random() * 16777215))
-			.addField("Animals:", help.animal)
-			.setTimestamp()
+    const animal = new Discord.MessageEmbed()
+      .setTitle(":mammoth: Animal Commands!")
+      .setColor(Math.floor(Math.random() * 16777215))
+      .addField("Animals:", help.animal)
+      .setTimestamp()
       .setFooter(`Delta is made by ${config.ownername} • ${config.copyright}`);
 
     const game = new Discord.MessageEmbed()
