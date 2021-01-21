@@ -6,7 +6,7 @@ module.exports = {
   name: "tickle",
   aliases: ["tkl"],
   cooldown: 5,
-  execute(client, message, args) {
+  async execute(client, message, args) {
     let user = message.mentions.users.first();
 
     if (!user)
