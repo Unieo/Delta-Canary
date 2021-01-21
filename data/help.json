@@ -6,7 +6,7 @@
     "`info`\n`avatar` **Aliases:** `icon`, `pfp`\n`ping`\n`uptime` **Aliases:** `ut`\n`serverinfo` **Aliases:** `si`\n`source` **Aliases:** `src`\n`invite` **Aliases:** `inv`\n`vote`"
   ],
   "action": [
-    "`pat`\n`poke`\n`hug`\n`feed`\n`hammer` **Aliases:** `hmr`\n`fight`\n`slap`\n`smack`"
+    "`pat`\n`poke`\n`hug`\n`feed`\n`hammer` **Aliases:** `hmr`\n`fight`\n`slap`\n`smack`\n`tickle` **Aliases:** `tkl`"
   ],
   "game": [
     "`diceroll` **Aliases:** `dr`\n`rockpaperscissor` **Aliases:** `rps`\n`coinflip` **Aliases:** `cf`"

@@ -44,7 +44,6 @@ client.on("guildCreate", (guild) => {
   defaultChannel.send({ embed });
 });
 
-
 client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
