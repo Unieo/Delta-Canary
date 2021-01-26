@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 module.exports = {
   name: "coinflip",
   aliases: ["cf"],
-  cooldown: 8,
+  cooldown: 2,
   execute(client, message, args) {
     let random = Math.floor(Math.random() * Math.floor(2));
     let heads = "**:coin: You got Heads!**";

@@ -5,7 +5,7 @@ const config = require("../data/config.json");
 module.exports = {
   name: "advice",
   aliases: ["adv"],
-  cooldown: 10,
+  cooldown: 2,
   execute(client, message, args) {
     request.get("http://api.adviceslip.com/advice").end((err, res) => {
       if (!err && res.status === 200) {

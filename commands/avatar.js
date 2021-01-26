@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 module.exports = {
   name: "avatar",
   aliases: ["icon", "pfp"],
-  cooldown: 5,
+  cooldown: 2,
   execute(client, message, args) {
     let mentions = message.mentions.users;
     let user = mentions.first();

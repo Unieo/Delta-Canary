@@ -1,7 +1,7 @@
 module.exports = {
   name: "uptime",
   aliases: ["ut"],
-  cooldown: 5,
+  cooldown: 2,
   execute(client, message, args) {
     var milliseconds = parseInt((client.uptime % 1000) / 100),
       seconds = parseInt((client.uptime / 1000) % 60),

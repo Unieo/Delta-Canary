@@ -1,17 +1,17 @@
 {
-  "fun": [
-    "`8ball` **Aliases:** `8b`\n`meme`\n`advice` **Aliases:** `adv`\n`joke`"
+	"reddit": [
+    "`meme`\n`aww`\n`earth`\n`food`\n`itap`\n`justintime` **Aliases:** `jit`\n"
   ],
   "utility": [
     "`info`\n`avatar` **Aliases:** `icon`, `pfp`\n`ping`\n`uptime` **Aliases:** `ut`\n`serverinfo` **Aliases:** `si`\n`source` **Aliases:** `src`\n`invite` **Aliases:** `inv`\n`vote`"
   ],
-  "action": [
-    "`pat`\n`poke`\n`hug`\n`feed`\n`hammer` **Aliases:** `hmr`\n`fight`\n`slap`\n`smack`\n`tickle` **Aliases:** `tkl`"
-  ],
   "game": [
-    "`diceroll` **Aliases:** `dr`\n`rockpaperscissor` **Aliases:** `rps`\n`coinflip` **Aliases:** `cf`"
+    "`8ball` **Aliases:** `8b`\n`diceroll` **Aliases:** `dr`\n`rockpaperscissor` **Aliases:** `rps`\n`coinflip` **Aliases:** `cf`"
   ],
 	"animal": [
 		"`dog`\n`birb`\n`fox`\n`panda`\n`koala`\n`cat`\n`shibe`"
-	]
+	],
+	"other": [
+    "`advice` **Aliases:** `adv`\n`joke`"
+  ]
 }

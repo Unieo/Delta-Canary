@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "joke",
-  cooldown: 10,
+  cooldown: 2,
   async execute(client, message, args) {
     const { data } = await axios.get("https://some-random-api.ml/joke");
 

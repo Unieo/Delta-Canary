@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 module.exports = {
   name: "invite",
   aliases: ["inv"],
-  cooldown: 5,
+  cooldown: 2,
   execute(client, message, args) {
     let invite =
       "[Invite Manually](https://discord.com/oauth2/authorize?client_id=786882695186874368&scope=bot&permissions=2147483647) \n [Top.gg](https://top.gg/bot/786882695186874368) \n [Discord Bot List](https://discordbotlist.com/bots/delta-6103) \n [Bots For Discord](https://botsfordiscord.com/bot/786882695186874368)";

@@ -6,7 +6,7 @@ function random() {
 module.exports = {
   name: "rockpaperscissor",
   aliases: ["rps"],
-  cooldown: 8,
+  cooldown: 2,
   execute(client, message, args) {
     let choice = args.join(" ").toLowerCase();
     if (choice === "")

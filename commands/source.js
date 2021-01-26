@@ -4,7 +4,7 @@ const config = require("../data/config.json");
 module.exports = {
   name: "source",
   aliases: ["src"],
-  cooldown: 5,
+  cooldown: 2,
   execute(client, message, args) {
     const embed = new Discord.MessageEmbed()
       .setTitle("Bot Source")

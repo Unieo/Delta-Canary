@@ -5,7 +5,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "fox",
-  cooldown: 10,
+  cooldown: 2,
   async execute(client, message, args) {
     const { body } = await superagent.get(
       "https://some-random-api.ml/facts/fox"

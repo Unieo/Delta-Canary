@@ -3,7 +3,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "vote",
-  cooldown: 5,
+  cooldown: 2,
   execute(client, message, args) {
     let invite =
       "[Top.gg](https://top.gg/bot/786882695186874368/vote) \n [Discord Bot List](https://discordbotlist.com/bots/delta-6103/upvote) \n [Bots For Discord](https://botsfordiscord.com/bot/786882695186874368/vote)";

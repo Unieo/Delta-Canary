@@ -12,7 +12,7 @@ module.exports = {
   name: "serverinfo",
   aliases: ["si"],
   guildOnly: true,
-  cooldown: 5,
+  cooldown: 2,
   execute(client, message, args) {
     let region = {
       brazil: "Brazil",

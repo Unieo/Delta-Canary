@@ -5,7 +5,7 @@ const config = require("../data/config.json");
 
 module.exports = {
   name: "cat",
-  cooldown: 10,
+  cooldown: 2,
   async execute(client, message, args) {
     const { body } = await superagent.get("http://aws.random.cat/meow");
 
