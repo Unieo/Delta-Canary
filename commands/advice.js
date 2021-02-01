@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const request = require("superagent");
+const superagent = require("superagent");
 const config = require("../data/config.json");
 
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
 	aliases: ["adv"],
 	cooldown: 2,
 	execute(client, message, args) {
-		request.get("http://api.adviceslip.com/advice").end((err, res) => {
+		superagent.get("http://api.adviceslip.com/advice").end((err, res) => {
 			if (!err && res.status === 200) {
 				try {
 					JSON.parse(res.text);
