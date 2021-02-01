@@ -4,28 +4,28 @@ const axios = require("axios");
 const config = require("../data/config.json");
 
 module.exports = {
-  name: "cat",
-  cooldown: 2,
-  async execute(client, message, args) {
-    const { body } = await superagent.get("http://aws.random.cat/meow");
+	name: "cat",
+	cooldown: 2,
+	async execute(client, message, args) {
+		const { body } = await superagent.get("http://aws.random.cat/meow");
 
-    const url = "https://some-random-api.ml/facts/cat";
+		const url = "https://some-random-api.ml/facts/cat";
 
-    let response, data;
-    try {
-      response = await axios.get(url);
-      data = response.data;
-    } catch (e) {
-      return message.channel.send(`An error occured! ${e}`);
-    }
+		let response, data;
+		try {
+			response = await axios.get(url);
+			data = response.data;
+		} catch (e) {
+			return message.channel.send(`An error occured! ${e}`);
+		}
 
-    const embed = new Discord.MessageEmbed()
-      .setColor(Math.floor(Math.random() * 16777215))
-      .setTitle("Here's Your Cat :cat:")
-      .setImage(body.file)
-      .setDescription(data.fact)
-      .setTimestamp()
-      .setFooter(`${config.copyright}`);
-    message.channel.send({ embed });
-  },
+		const embed = new Discord.MessageEmbed()
+			.setColor(Math.floor(Math.random() * 16777215))
+			.setTitle("Here's Your Cat :cat:")
+			.setImage(body.file)
+			.setDescription(data.fact)
+			.setTimestamp()
+			.setFooter(`${config.copyright}`);
+		message.channel.send({ embed });
+	},
 };
