@@ -1,0 +1,1 @@
+All work on Delta Canary is stopping. If you want to furthur work on Delta, then consider commiting to the main repo [here](https://github.com/Unieo/Delta). I have done this because it's much easier to work on one project rathar than two similar one's (that is a canary version and a main version).
